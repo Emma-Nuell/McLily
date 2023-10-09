@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="main">
-           <h1>McLily</h1>
+           <a href="index.html"><h1>McLily</h1></a>
             <input type="search" placeholder="Search for products, brands and categories">
             <button>Search</button>
              <span class="shuu"><span class="boo"><i class="fa-regular fa-user guest"></i><i class="ri-user-follow-line"></i><p>Account</p><i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></span>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="login-dropdown">
                     <div>
-                        <span><i class="fa-regular fa-user"></i><p>My Account</p></span>
+                        <span class="bala"><i class="fa-regular fa-user"></i><p>My Account</p></span>
                         <span><i class="ri-luggage-cart-line"></i><p>orders</p></span>
                         <span><i class="ri-heart-line"></i><p>Saved Items</p></span>
                         <span><i class="ri-mail-line"></i><p>Inbox</p></span>
@@ -62,50 +62,68 @@
         </div>
         <div class="mobile-header">
             <div class="top">
-                <span><i class="ri-menu-line"></i><h1>McLily</h1></span>
+                <span><i class="ri-menu-line"></i><i class='bx bx-x' id="times"></i><h1>McLily</h1></span>
                 <span><i class="ri-shopping-cart-2-line"></i></span>
             </div>
-            <div class="under">
+            <div class="under search-bar">
                 <input type="search" placeholder="Search for products, brands and categories">
             </div>
         </div>
         <div class="mobile-dropdown">
             <div class="profile">
                 <div class="buttons">
-                    <button>Login</button>
-                    <button>Sign Up</button>
+                    <button id="mlogin">Login</button>
+                    <button id="msignUp">Sign Up</button>
                 </div>
-                <section>
-                    <div class="top">
-                        <div>  
-                         <span><i class="ri-map-pin-line"></i></span>
+                <div class="logged-user">
+                    <img src="https://th.bing.com/th/id/OIP.xo-BCC1ZKFpLL65D93eHcgHaGe?pid=ImgDet&rs=1" alt="image">
+                    <section>
+                        <p class="uname">mcpaul okoye</p>
+                        <p class="uemail">okoyemcpaukl@gmail.com</p>
+                        <a href="./profile.html">Account Setitngs</a>
+                    </section>
+                </div>
+                <table>
+                    <tr>
+                        <td>
                             <article>
-                                <h4>Track Orders</h4>
+                                <h4><i class="ri-map-pin-line"></i>Track Orders</h4>
                                 <a href="#">View order status</a>
                             </article>
-                        </div>
-                        <div>
-                            <span><i class="ri-price-tag-3-line"></i></span>
+                        </td>
+                        <td>
+                            <article><h4><i class="ri-star-line"></i>Pending Items</h4></article>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
                             <article>
-                                <h4>Sell on McLily</h4>
+                                <h4><i class="ri-price-tag-3-line"></i>Sell on McLily</h4>
                                 <a href="#">Join other merchants</a>
                             </article>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div>
-                            <span><i class="ri-star-line"></i></span>
-                            <article><h4>Pending Items</h4></article>
-                        </div>
-                        <div>
-                            <span><i class="ri-store-3-line"></i></span>
+                        </td>
+                        <td>
                             <article>
-                                <h4>Physical Stores</h4>
+                                <h4><i class="ri-store-3-line"></i>Physical Stores</h4>
                                 <a href="#">Stores around you</a>
                             </article>
-                        </div>
-                    </div>
-                </section>
+                        </td>
+                    </tr>
+                    <tr class="logged-info">
+                        <td>
+                            <article>
+                                <h4><i class="ri-mail-line"></i>Inbox</h4>
+                                <a href="#">Lastest novelities</a>
+                            </article>
+                        </td>
+                        <td>
+                            <article class="logged-address">
+                                <h4><i class="ri-home-3-line"></i>My Addresses</h4>
+                                <a href="#">View saved addresses</a>
+                            </article>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="nav-categories">
                 <h4>Categories</h4>
@@ -119,6 +137,10 @@
             </div>
             <div class="account">
                 <span><i class="ri-phone-line"></i><p>Contact Us</p></span>
+                <span class="logged-shit">
+                    <span><i class="ri-user-unfollow-line"></i><p>Delete Account</p></span>
+                    <span class="logged-logOut"><i class="ri-logout-box-line"></i><p>Logout</p></span>
+                </span>
             </div>
         </div>
     </header>
@@ -623,7 +645,7 @@
             <span><i class="ri-home-3-line"></i><p>Home</p></span>
             <span><i class="ri-list-check"></i><p>Catergories</p></span>
             <span><i class="ri-shopping-cart-2-line"></i><p>Cart</p></span>
-            <span><i class="ri-account-circle-line"></i><p>Account</p></span>
+          <a href="profile.html"><span><i class="ri-account-circle-line"></i><p>Account</p></span></a>
         </div>
     </footer>
 

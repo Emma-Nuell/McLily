@@ -96,7 +96,7 @@ form button {
   margin: 10px 0;
 }
 #password-description {
-  font-size: 14px;
+  font-size: clamp(12px , 1.2vw, 16px);
   color: rgb(50, 189, 50);
   margin-bottom: 10px;
 }
@@ -105,6 +105,9 @@ form button {
 }
 @media (max-width: 576px) {
   form {
-     width: 80%;
+     width: 90%;
+  }
+  .input-container input {
+    height: 40px;
   }
 }

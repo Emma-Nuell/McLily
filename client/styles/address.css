@@ -43,41 +43,6 @@ main {
     padding: 30px;
     height: 100%;
 }
-.list {
-    background-color: #fff;
-    border-radius: 7px;
-    display: flex;
-    flex-direction: column;
-    width: 22%;
-    padding: 20px;
-}
-.list section {
-    display: flex;
-    border-bottom: 1px solid #8b8484;
-    margin-bottom: 20px;
-    gap: 15px;
-}
-.list section span {
-    font-size: 18px;
-}
-.list section:nth-of-type(4) {
-    border-bottom: none;
-}
-.list article {
-    display: flex;
-    flex-direction: column;
-}
-.list article h4 {
-    margin-bottom: 10px;
-}
-.list a {
-    text-decoration: none;
-    color: black;
-    margin-bottom: 7px;
-}
-.list .active {
-    color: aquamarine;
-}
 .info {
     width: 65%;
     background-color: #fff;
@@ -158,7 +123,7 @@ main {
     margin-top: 25px;
     padding: 10px;
     border-radius: 5px;
-    display: none;
+    /* display: none; */
 }
 .address span {
     margin-bottom: 7px;
@@ -222,6 +187,10 @@ main {
     }
     .address {
         width: 100%;
-        margin-bottom: 110px;
+        /* margin-bottom: 110px; */
+    }
+    footer {
+        position: fixed ;
+        bottom: 0;
     }
 }

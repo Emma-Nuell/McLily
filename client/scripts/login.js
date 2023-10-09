@@ -56,6 +56,9 @@ async function loginUser(data) {
         if (response.status === 200) {
             window.localStorage.setItem('token', result.token)  
             window.localStorage.setItem('name', result.user.firstName)  
+            window.localStorage.setItem('lname', result.user.lastName)  
+            window.localStorage.setItem('email', result.user.email)  
+            window.localStorage.setItem('password', result.user.password)  
             window.location.href = 'index.html'
         }
 

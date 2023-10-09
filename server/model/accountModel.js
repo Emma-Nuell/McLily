@@ -29,14 +29,14 @@ class Accounts {
     static async login(email, password) {
         if (!email || !password) throw Error('All fields must be filled')
         if (!validator.isEmail(email)) throw Error("Invalid Email Address")
-        if (!validator.isStrongPassword(password)) throw Error("Password not strong enough")
+        // if (!validator.isStrongPassword(password)) throw Error("Password not strong enough")
 
         const user = await this.userExists(email)
         if (!user) throw Error("User does not exist")
         const match = await bcrypt.compare(password, user.password)
         
         if (!match) throw Error("Incorrect Password")
-        return {id: user.id, firstName: user.firstname}
+        return {id: user.id, firstName: user.firstname, lastName: user.lastname, email: user.email}
     }
 
     static async userExists(email) {

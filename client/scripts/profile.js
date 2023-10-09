@@ -25,6 +25,25 @@ const infoHeader = document.getElementById("info-header")
 const accountInfo = document.getElementById("account")
 const addressInfo = document.getElementById("address")
 const editInfo = document.getElementById("edit-info")
+let url = "http://127.0.0.1:3000"
+
+const token = window.localStorage.getItem("token")
+
+
+async function getProfile() {
+    const response = await fetch(`${url}/user/profile`, {
+        headers: {
+            'Authorization': `Bearer ${token}`
+        }
+    });
+    const data = await response.json();
+    return data
+}
+
+const userDetails = await getProfile()
+afname.value = `${userDetails.firstname}`
+alname.value = `${userDetails.lastname}`
+aemail.value = `${userDetails.email}`
 
 
 addressView.addEventListener("click", (e) => {
