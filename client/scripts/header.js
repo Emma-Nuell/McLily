@@ -3,6 +3,8 @@ const boo = document.querySelector(".boo")
 const accDropdown = document.querySelector(".acc-dropdown")
 const name1 = boo.querySelector("p")
 const signIn = accDropdown.querySelector("button")
+const balabulu = accDropdown.querySelectorAll(".balabulu span")
+console.log(balabulu)
 const loginDropdown = document.querySelector(".login-dropdown")
 const arrowUp = document.querySelector(".fa-angle-up")
 const arrowDown = document.querySelector(".fa-angle-down")
@@ -72,6 +74,11 @@ else {
             dropdownState = false
         }
     })
+    balabulu.forEach(element => {
+        element.addEventListener("click", () => {
+            window.location.href = "login.html"
+        })
+    });
 }
 signIn.addEventListener("click", () => {
     window.location.href = "login.html"

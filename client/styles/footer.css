@@ -126,4 +126,8 @@ footer .copyright::after {
     .mobile-footer span p {
         font-size: 13px;
     }
+    .mobile-footer a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
