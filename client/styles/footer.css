@@ -102,9 +102,13 @@ footer .copyright::after {
     footer .main, footer .copyright {
         display: none;
     }
+    .space-div {
+        background: transparent;
+        height: 60px;
+    }
     footer {
         height: fit-content;
-        position: sticky;
+        position: fixed;
         bottom: 0;
         flex-direction: row;
     }

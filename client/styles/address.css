@@ -187,10 +187,5 @@ main {
     }
     .address {
         width: 100%;
-        /* margin-bottom: 110px; */
-    }
-    footer {
-        position: fixed ;
-        bottom: 0;
     }
 }

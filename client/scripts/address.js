@@ -6,13 +6,26 @@ const editInfo = document.getElementById("edit-info")
 const addressInfo = document.getElementById("address")
 const infoHeader = document.getElementById("info-header")
 const footer = document.querySelector("footer")
-console.log(footer)
+
+const span = document.createElement("span")
+const i = document.createElement("i")
+const h3 = document.createElement("h3")
+h3.innerText = "Edit Delivery Address"
+i.classList.add("ri-arrow-left-line")
+i.addEventListener("click", () => {
+    window.location.href = "address.html"
+})
+span.appendChild(i)
+span.appendChild(h3)
+
+// infoHeader.innerHTML = span
+
 
 ebutton.addEventListener("click", () => {
-    infoHeader.innerHTML = `<span><i class="ri-arrow-left-line"></i><h3>Edit Delivery Address</h3></span>`
+    infoHeader.innerHTML = ""
+    infoHeader.appendChild(span )
     addressInfo.style.display = "none"
     editInfo.style.display = "flex"
-    footer.style.position = "sticky"
 })
 
 function updateCityDropdown() {
